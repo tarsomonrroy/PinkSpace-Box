@@ -1,0 +1,15 @@
+.nav-item .active {
+    border-bottom: 5px solid magenta;
+}
+.nav-link {
+    color: black;
+    font-size: larger;
+}
+
+.nav-link:hover {
+    color: magenta;
+}
+
+header {
+    background-color: white;
+}

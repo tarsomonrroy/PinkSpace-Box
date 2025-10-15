@@ -1,0 +1,210 @@
+/* Main página AJUDAR */
+
+/* Esse é o container q vai ter as fotos, texto, etc */
+.container_cursos{
+
+    max-width: 1200px;
+    margin:0 auto;
+    padding:3rem 2rem;
+    
+    
+  }
+  /* titulo q aparece no inicio da pagina */
+  .container_cursos .title{
+    font-size: 3.5rem;
+    color:#444;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--font-titulos);
+  }
+  
+  /* O container dos quadrados da pagina */
+  .container_cursos  .products-container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(30rem, 1fr));
+    gap:2rem;
+    
+   
+  }
+  
+  /* essa é a "caixa" por si só, os quadradinhos */
+  .container_cursos  .products-container .product{
+    text-align: center;
+    width: 100%;
+    padding:3rem 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    outline: .1rem solid #ccc;
+    outline-offset: -1.5rem;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    align-items: center;
+    
+  
+  }
+  
+  /* animação da linha do quadradinho */
+  .container_cursos  .products-container .product:hover{
+    outline: .2rem solid #222;
+    outline-offset: 0;
+    
+  
+  }
+  
+  /* imagem q fica no quadrado */
+  .container_cursos  .products-container .product img{
+    height: 20rem;
+    width: 30rem;
+    transition: 0.4s ease-in-out;
+    align-items: center;
+    
+  }
+  
+  /* animação da imagem */
+  .container .products-container .product:hover img{
+    transform: scale(.9);
+  }
+  
+  .container_cursos .products-container .product h3{
+    padding:.5rem 0;
+    font-size: 2rem;
+    color:#444;
+    font-family: var(--font-titulos);
+  }
+  
+  .container_cursos  .products-container .product:hover h3{
+    color: var(--color-botao2);
+  }
+  
+  
+  /* Aqui já da classe dos quadrados q aparece quando clica */
+  .products-preview{
+    position: fixed;
+    top:0; left:0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 3000;
+    
+  }
+  
+  /* esse é o css dos quadrados flutuantes */
+  .products-preview .preview{
+    display: none;
+    padding:2rem;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin:2rem;
+    width: 70rem;
+    
+  }
+  
+  /* isso é pra quando eles estiverem ativos */
+  .products-preview .preview.active{
+    display: inline-block;
+    z-index: 2000;
+  }
+  
+  /* sobre a imagem deles */
+  .products-preview .preview img {
+    height: 30rem;
+  }
+  
+  /* Aqui é o design daquele X do canto */
+  .products-preview .preview  h2{
+    position: absolute;
+    top:1rem; right:3rem;
+    cursor: pointer;
+    color:#444;
+    font-size: 5rem;
+  }
+  
+  /* A animação do X */
+  .products-preview .preview h2:hover{
+    transform: rotate(20deg);
+  }
+  
+  .products-preview .preview h3{
+    color:var(--color-texto);
+    padding:.5rem 0;
+    font-size: 2.5rem;
+    font-family: var(--font-titulos);
+  }
+  
+  
+  
+  .products-preview .preview p{
+    line-height: 1.5;
+    padding:1rem 0;
+    font-size: 1.6rem;
+    color:#777;
+    font-family: var(--font-texto);
+  }
+  
+  /* Css dos botões seguir e ajudar */
+  .products-preview .preview .buttons{
+    display: flex;
+    gap:1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  
+  .products-preview .preview .buttons a{
+    flex:1 1 16rem;
+    padding:1rem;
+    font-size: 1.8rem;
+    color:var(--color-texto);
+    text-decoration: none;
+    border-radius: 5px;
+    width: 60px;
+    font-family: var(--font-texto);
+  }
+  
+  .products-preview .preview .buttons a{
+    background: var(--color-botoes);
+    
+    
+  }
+  
+  /* Animação dos botoes */
+  .products-preview .preview .buttons a:hover{
+    background: var(--color-botoes-hover);
+  }
+  
+  /* Aqui é o q deixa a imagem e os quadrados responsivos */
+  @media (max-width:991px){
+  
+    html{
+       font-size: 55%;
+    }
+  
+  }
+  
+  @media (max-width:700px){
+  
+  
+    .products-preview .preview img{
+       height: 20rem;
+    }
+    .container_cursos  .products-container{
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+  
+  }
+  
+  @media (max-width:450px){
+  
+    html{
+       font-size: 50%;
+    }
+    .products-preview .preview img{
+      height: 5rem;
+   }
+  
+  }

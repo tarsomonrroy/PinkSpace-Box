@@ -1,0 +1,68 @@
+a {
+    color:blueviolet;
+    text-decoration: none;
+}
+
+a:hover {
+    color: magenta;
+    transition: 0.3s;
+}
+
+a:not(:hover) {
+    transition: 0.3s;
+}
+
+body {
+    background-color: #FFE8FB;
+    font-family: 'Montserrat', 'Comfortaa', Arial, Helvetica, sans-serif;
+}
+
+.background-alt {
+    background-color: #FF8BD1;
+}
+
+hr {
+    color:#FF8BD1;
+    opacity:100%;
+    border-width:5px;
+}
+
+.card {
+    border-radius: 22px;
+    box-shadow: 2px 2px 15px;
+    background-color:#FF8BD1;
+    height: 100%;
+}
+
+.card img {
+    width: 100%;
+}
+
+button.card:hover {
+    background-color: #ff6fc6;
+    transform:scale(1.05);
+    transition: transform 0.5s;
+}
+
+button.card:not(:hover) {
+    transition: 0.5s;
+}
+
+button {
+    border:none;
+    background-color: #FF8BD1;
+    border-radius: 30px;
+    padding: 0.6rem 1.6rem;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #ff6fc6;
+}
+
+.whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+}
+

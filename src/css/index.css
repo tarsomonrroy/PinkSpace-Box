@@ -1,0 +1,84 @@
+#destaques-cursos .card {
+    background-color:#FF8BD1;    
+}
+
+#destaques-servicos .card {
+    background-color:#FFCFEF;
+}
+
+#destaques-servicos button {
+    background-color:#FFCFEF;
+}
+
+#destaques-servicos button:hover {
+    background-color: #ffbef4;
+}
+
+#destaques-servicos hr {
+    color: #FFCFEF;
+}
+
+#cloud1 {
+    position: absolute;
+    top: 1vw;
+    height: 25vw;
+    width: 30vw;
+}
+
+#bigCarousel .carousel-control-prev {
+    position: absolute;
+    width: 8vw;
+}
+
+#bigCarousel .carousel-control-prev img {
+    width: 3vw;
+}
+
+#bigCarousel .carousel-control-next {
+    position: absolute;
+    width: 8vw;
+}
+
+#bigCarousel .carousel-control-next img {
+    width: 3vw;
+    transform: rotate(180deg);
+}
+
+#bigCarousel .carousel-control-prev:hover {
+    background-color: transparent;
+}
+
+#bigCarousel .carousel-control-next:hover {
+    background-color: transparent;
+}
+
+#bigCarousel h3 {
+    position: absolute;
+    font-size: 3vw;
+    top: 10vw;
+    left: 7.5vw;
+}
+
+#bigCarousel .carousel-inner button {
+    background-color:#FF8BD1;
+    border: none;
+    padding: 0.8vw 1.6vw;
+    border-radius: 3vw;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 14vw;
+    left: 9vw;
+}
+
+#bigCarousel .carousel-inner button:hover {
+    background-color: #ff6fc6;
+}
+
+#bigCarousel .carousel-item img {
+    height: 30vw;
+}
+
+.d-block{
+    width: 100vw;
+    z-index: 1;
+}

@@ -1,0 +1,30 @@
+body {
+    background-color: #f5eef5;
+    font-family: 'Montserrat', 'Comfortaa', Arial, Helvetica, sans-serif;
+}
+  
+.subtitle {
+    background-color: #FF8BD1;
+    padding: 3vw;
+    font-size: 1.8rem;
+}
+
+h2{
+    font-family: var(--font-titulo);
+}
+
+p{
+    font-family: var(--font-texto);
+}
+
+.form{
+    text-align: center;
+}
+#game {
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 30px;
+    width: 50vw;
+    height: 50vw;
+    max-width: 80%;
+}
